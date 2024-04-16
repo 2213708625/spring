@@ -14,7 +14,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class AccountService {
     public void service(){
-        String s1=null;
+        String s1="11";
         s1.toString();
         System.out.println("执行任务");
     }
