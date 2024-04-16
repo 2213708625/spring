@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:c="http://www.springframework.org/schema/c"
+       xmlns:p="http://www.springframework.org/schema/p" xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
+
+    <context:component-scan base-package="com.ding.bean"/>
+    <bean id="user" class="com.ding.bean.User" p:username="丁">
+        <property name="password" value="1244"/>
+        <property name="aihaos">
+            <array>
+                <value>1</value>
+                <value>2</value>
+                <value>3</value>
+            </array>
+        </property>
+        <property name="names">
+            <list>
+                <value>"sadad"</value>
+                <value>"dsads1"</value>
+            </list>
+        </property>
+        <property name="values">
+            <set>
+                <value>1</value>
+                <value>"dsad"</value>
+            </set>
+        </property>
+        <property name="meandyou">
+            <map>
+                <entry key="1" value="我"/>
+                <entry key="2" value="你"/>
+            </map>
+        </property>
+        <property name="properties">
+            <props>
+                <prop key="3">dsa</prop>
+                <prop key="4">dsadsadada</prop>
+            </props>
+        </property>
+    </bean>
+    <bean id="people" class="com.ding.bean.People">
+        <property name="user" ref="user"/>
+     </bean>
+</beans>

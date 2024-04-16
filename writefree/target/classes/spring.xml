@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:c="http://www.springframework.org/schema/c"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+         http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd
+         http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+<bean id="UserDaoBean" class="freefantasy.dao.UserDao"/>
+    <bean id="UserServiceBean" class="freefantasy.service.UserService">
+        <property name="userDao" ref="UserDaoBean"/>
+    </bean>
+    <bean id="userServiceBean" class="freefantasy.service.UserService">
+        <property name="userDao">
+            <bean class="freefantasy.dao.UserDao"></bean>
+        </property>
+    </bean>
+    <bean id="user" class="freefantasy.bean.User">
+        <property name="username" value="丁海斌"/>
+        <property name="password" value="123456"/>
+     </bean>
+    <bean id="user2" class="freefantasy.bean.User">
+        <property name="username" value="刘嘉琪"/>
+        <property name="password"><null/></property>
+    </bean>
+    <bean id="dhb" class="freefantasy.bean.dinghaibin">
+        <property name="aihaos">
+            <array>
+                <value>唱</value>
+                <value>跳</value>
+                <value>rap</value>
+            </array>
+        </property>
+        <property name="user">
+            <array>
+                <ref bean="user"/>
+                <ref bean="user2"/>
+            </array>
+        </property>
+    </bean>
+    <bean id="listnamesBean" class="freefantasy.bean.collection">
+        <property name="names">
+            <list>
+            <value>我</value>
+            <value>爱</value>
+            <value>你</value>
+            </list>
+        </property>
+        <property name="namesets">
+            <set>
+                <value>刘</value>
+                <value>嘉</value>
+                <value>琪</value>
+            </set>
+        </property>
+        <property name="namemaps">
+            <map>
+                <entry key="6" value="+"/>
+                <entry key="7" value="啊"/>
+            </map>
+        </property>
+        <property name="properties">
+            <props>
+                <prop key="1">想你</prop>
+                <prop key="2">不是骗你的</prop>
+                <prop key="3">真的</prop>
+            </props>
+        </property>
+    </bean>
+    <bean name="user3" class="freefantasy.bean.User" p:username="我和" p:password="你"/>
+    <bean name="user4" class="freefantasy.bean.User" c:username="我爱" c:password="你"/>
+    <util:properties id="properties">
+        <prop key="我">你</prop>
+        <prop key="你">我</prop>
+    </util:properties>
+
+</beans>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context" xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:c="http://www.springframework.org/schema/c" xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/util https://www.springframework.org/schema/util/spring-util.xsd">
+    <!--测试set方法注入-->
+    <bean id="user" class="bean.User">
+    <property name="username" value="丁海斌"/>
+    <property name="password" value="you"/>
+    </bean>
+    <!--测试构造方法注入-->
+    <!--<bean id="userconstructor" class="bean.User">
+        <constructor-arg name="username" value="听见你"/>
+        <constructor-arg name="password" value="是你呀"/>
+        <constructor-arg name="aihaos" value="asd"/>
+    </bean>-->
+    <!--测试注入另一个引入类型-->
+    <bean id="userDao" class="dao.UserDao"/>
+    <bean id="userService" class="service.UserService">
+        <property name="userDao" ref="userDao"/>
+    </bean>
+    <!--测试set注入数组简单类型-->
+    <bean id="userarray" class="bean.User">
+        <property name="aihaos">
+            <array>
+                <value>唱</value>
+                <value>跳</value>
+                <value>rap</value>
+                <value>篮球</value>
+            </array>
+        </property>
+        <property name="username" value="蔡徐坤"/>
+        <property name="password" value="只因你太美"/>
+    </bean>
+    <!--测试数组注入引入类型-->
+    <bean id="women1" class="bean.Women">
+        <property name="age" value="18"/>
+        <property name="name" value="你"/>
+    </bean>
+    <bean id="women2" class="bean.Women">
+        <property name="age" value="20"/>
+        <property name="name" value="我"/>
+    </bean>
+    <bean id="userarraywomen" class="bean.User">
+        <property name="womens">
+            <array>
+                <ref bean="women1"/>
+                <ref bean="women2"/>
+            </array>
+        </property>
+        <property name="username" value="丁"/>
+        <property name="password" value="2321"/>
+    </bean>
+    <!--测试set注入list集合和set集合-->
+    <bean id="listandset" class="bean.User">
+        <property name="houses">
+            <list>
+                <value>1</value>
+                <value>2</value>
+                <value>3</value>
+            </list>
+        </property>
+        <property name="wifes">
+            <set>
+                <value>a</value>
+                <value>b</value>
+                <value>c</value>
+            </set>
+        </property>
+    </bean>
+    <!--测试set注入Map集合-->
+    <bean id="userMap" class="bean.User">
+        <property name="wifenames">
+            <map>
+                <entry key="1" value="留"/>
+                <entry key="2" value="陈"/>
+                <entry key="3" value="林"/>
+                <entry key="4" value="雷"/>
+            </map>
+        </property>
+    </bean>
+    <!--测试set注入properties集合-->
+    <bean id="userProperties" class="bean.User">
+        <property name="properties">
+            <props>
+                <prop key="1">霞浦</prop>
+                <prop key="2">福州</prop>
+                <prop key="3">共青城</prop>
+            </props>
+        </property>
+    </bean>
+    <!--测试set注入properties集合与datasource结合-->
+    <context:property-placeholder location="jdbc.properties"/>
+    <bean id="dataSource" class="bean.DataSource">
+        <property name="driver" value="${jdbc.driver}"/>
+        <property name="url" value="${jdbc.url}"/>
+        <property name="username" value="${jdbc.username}"/>
+        <property name="password" value="${jdbc.password}"/>
+    </bean>
+    <!--测试p命名空间-->
+    <bean id="userp" class="bean.User" p:username="我p" p:password="你p"/>
+    <!--测试c命名空间-->
+    <bean id="womenc" class="bean.Women" c:age="1" c:name="dsa1"/>
+    <!--测试util命名空间-->
+    <util:properties id="properties">
+        <prop key="1">2</prop>
+        <prop key="3">4</prop>
+    </util:properties>
+    <bean id="userutil" class="bean.User">
+        <property name="properties" ref="properties"/>
+    </bean>
+    <!--测试根据名字自动装配-->
+    <bean id="userautowire" class="bean.User" autowire="byName"/>
+</beans>

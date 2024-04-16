@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/saol.iml" filepath="$PROJECT_DIR$/saol.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spri121.iml" filepath="$PROJECT_DIR$/spri121.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springfuxi/springfuxi.iml" filepath="$PROJECT_DIR$/springfuxi/springfuxi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/untitled.iml" filepath="$PROJECT_DIR$/untitled.iml" />
+      <module fileurl="file://$PROJECT_DIR$/untitled1.iml" filepath="$PROJECT_DIR$/untitled1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/untitled2.iml" filepath="$PROJECT_DIR$/untitled2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/untitled3.iml" filepath="$PROJECT_DIR$/untitled3.iml" />
+    </modules>
+  </component>
+</project>

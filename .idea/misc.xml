@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/untitled1" />
+    <file type="web" url="file://$PROJECT_DIR$/webtest" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/spring01-revelation/pom.xml" />
+        <option value="$PROJECT_DIR$/spring02-first program/pom.xml" />
+        <option value="$PROJECT_DIR$/spring03-dependency/pom.xml" />
+        <option value="$PROJECT_DIR$/writefree/pom.xml" />
+        <option value="$PROJECT_DIR$/fuxispring/pom.xml" />
+        <option value="$PROJECT_DIR$/spring04-beanscope/pom.xml" />
+        <option value="$PROJECT_DIR$/spring05-instantiation/pom.xml" />
+        <option value="$PROJECT_DIR$/spring06-bean lifecycle/pom.xml" />
+        <option value="$PROJECT_DIR$/spring07-cycle-dependency/pom.xml" />
+        <option value="$PROJECT_DIR$/spring08-Bean-Annotation/pom.xml" />
+        <option value="$PROJECT_DIR$/spring09-jdbctemplate/pom.xml" />
+        <option value="$PROJECT_DIR$/fuxispring2/pom.xml" />
+        <option value="$PROJECT_DIR$/testpuoidea/pom.xml" />
+        <option value="$PROJECT_DIR$/spring10-aop/pom.xml" />
+        <option value="$PROJECT_DIR$/webtest/pom.xml" />
+        <option value="$PROJECT_DIR$/spring11-test/pom.xml" />
+        <option value="$PROJECT_DIR$/saol/pom.xml" />
+        <option value="$PROJECT_DIR$/untitled/pom.xml" />
+        <option value="$PROJECT_DIR$/untitled1/pom.xml" />
+        <option value="$PROJECT_DIR$/spri121/pom.xml" />
+        <option value="$PROJECT_DIR$/untitled2/pom.xml" />
+        <option value="$PROJECT_DIR$/spring11-transaction/pom.xml" />
+        <option value="$PROJECT_DIR$/fuxispring3/pom.xml" />
+        <option value="$PROJECT_DIR$/spring12-spring-mybatis/pom.xml" />
+        <option value="$PROJECT_DIR$/spring13-testannotation/pom.xml" />
+        <option value="$PROJECT_DIR$/springfuxi/pom.xml" />
+        <option value="$PROJECT_DIR$/fuxispring4/pom.xml" />
+        <option value="$PROJECT_DIR$/writefree/demo/pom.xml" />
+      </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/spring11-test/pom.xml" />
+        <option value="$PROJECT_DIR$/testpuoidea/pom.xml" />
+        <option value="$PROJECT_DIR$/testpuoidea/spring10-aop/pom.xml" />
+        <option value="$PROJECT_DIR$/writefree/demo/pom.xml" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" project-jdk-name="17" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

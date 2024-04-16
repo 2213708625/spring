@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="wife" class="cycle.bean.Wife">
+        <property name="name" value="刘嘉琪"/>
+        <property name="husband" ref="husband"/>
+    </bean>
+    <bean id="husband" class="cycle.bean.Husband">
+        <property name="name" value="丁海斌"/>
+        <property name="wife" ref="wife"/>
+    </bean>
+</beans>

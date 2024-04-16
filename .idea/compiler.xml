@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="spring01-revelation" />
+        <module name="spring08-Bean-Annotation" />
+        <module name="spring09-jdbctemplate" />
+        <module name="spring07-cycle-dependency" />
+        <module name="fuxispring3" />
+        <module name="fuxispring4" />
+        <module name="spring11-transaction" />
+        <module name="fuxispring2" />
+        <module name="spring06-bean" />
+        <module name="fuxispring" />
+        <module name="spring02-first program" />
+        <module name="spring12-spring-mybatis" />
+        <module name="spring04-beanscope" />
+        <module name="spring03-dependency" />
+        <module name="webtest" />
+        <module name="spring05-instantiation" />
+        <module name="spring13-testannotation" />
+        <module name="spring10-aop" />
+        <module name="writefree" />
+        <module name="spring02-first-program" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="demo" target="17" />
+      <module name="saol" target="1.5" />
+      <module name="spri121" target="17" />
+      <module name="spring06-bean lifecycle" target="17" />
+      <module name="spring10-AOP" target="17" />
+      <module name="spring10-Aop" target="17" />
+      <module name="spring11-test" target="17" />
+      <module name="springfuxi" target="17" />
+      <module name="testpuoidea" target="17" />
+      <module name="untitled" target="17" />
+      <module name="untitled1" target="1.7" />
+      <module name="untitled2" target="17" />
+      <module name="untitled3" target="17" />
+      <module name="webmybatisspring" target="17" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="demo" options="-parameters" />
+      <module name="springfuxi" options="-parameters" />
+    </option>
+  </component>
+</project>
